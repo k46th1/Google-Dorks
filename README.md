@@ -1,41 +1,13 @@
-# google-dorks
+# Google-Dorks
 [![License](https://img.shields.io/badge/license-MIT-_red.svg)](https://opensource.org/licenses/MIT)
-![contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
-<img src="https://img.shields.io/github/stars/Proviesec/google-dorks?style=social"> <img src="https://img.shields.io/github/forks/Proviesec/google-dorks?style=social">
-<a href="https://proviesec.org/">
-    <img src="https://avatars.githubusercontent.com/u/92156402?s=400&u=7fe0dbb9085a37818ee8c2b061432a9a69cbff42&v=4" alt="Proviesec logo" title="Proviesec" align="right" height="60" />
-</a>
-[![Twitter](https://img.shields.io/twitter/follow/proviesec?label=Follow)](https://twitter.com/proviesec)
-<a href="https://www.buymeacoffee.com/proviesec" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-<a href="https://patreon.com/proviesec"><img src="https://user-images.githubusercontent.com/6010786/178968010-4d47859d-ef52-4d0e-85eb-549654f9ad65.jpg" alt="Buy Me A Coffee" height="80"></a>
-Read this, my Medium Blog Space:👩‍💻<a href="https://proviesec.medium.com/"><b>Proviesec Security Medium Articles - read it</b></a>
 
-Table of Contents
-------------
-* [Introduction](#introduction)
-* [My love google dork](#my-love-google-dork)
-* [Search filters](#search-filters)
-* [Operators](#operators)
-   * [Search Term](#search-term)
-   * [OR](#or)
-* [Ideas](#ideas)
-* [Links](#links)
-* [Example](#example)
-* [Preventing GOOGLE DORKS](#preventin-google-dorks)
+Google dorks, also known as Google hacking or Google dorking, refer to specialized search queries that use advanced operators to find specific information indexed by Google's search engine. These queries are typically crafted to uncover vulnerabilities, sensitive data, or information that is not readily accessible through conventional searches.
 
-# Introduction 
+Google dorks are often utilized by security professionals, hackers, and researchers to identify potential security flaws, exposed data, or misconfigured systems on the internet. They can be used to find anything from exposed databases and login credentials to vulnerable websites and confidential documents.
 
-:star: Star us on GitHub — it motivates a lot! :star:
+While Google dorks can be powerful tools for legitimate purposes such as security testing and research, they can also be exploited for malicious activities if used unethically. Therefore, it's important for users to exercise caution and ensure that they comply with relevant laws and ethical guidelines when employing Google dorks.
 
-**If you have any google dork, just create a PullRequest or wrtie me on twitter.**  [![Twitter](https://img.shields.io/twitter/follow/proviesec?label=Follow)](https://twitter.com/proviesec) 
-
-**My medium article about Google Dorks** [How to use google dorks](https://medium.com/@proviesec/google-dork-the-best-one-and-how-do-you-find-bugs-with-it-689c69804b81)  
-
-
-# My love google dork
-```
-intext:"index of" "parent directory"
-```
+![image](https://assets.securitytrails.com/cdn-cgi/image/width=800,quality=80,format=auto/blog/google-hacking-techniques/thumbs/4x3.jpg)
 
 ## Search filters
 
@@ -56,6 +28,22 @@ intext:"index of" "parent directory"
 | allinpostauthor (and also inpostauthor)      | Exclusively for the blog search, blog posts written by specific people are picked out. | `allinpostauthor:"keyword"` |
 | related      | List web pages that are "similar" to a given web page. | `related:www.github.com` |
 | cache      | Displays the version of the web page that Google has in its cache. | `cache:www.github.com` |
+
+## Examples
+
+intext:"index of /"
+Nina Simone intitle:”index.of” “parent directory” “size” “last modified” “description” I Put A Spell On You (mp4|mp3|avi|flac|aac|ape|ogg) -inurl:(jsp|php|html|aspx|htm|cf|shtml|lyrics-realm|mp3-collection) -site:.info
+Bill Gates intitle:”index.of” “parent directory” “size” “last modified” “description” Microsoft (pdf|txt|epub|doc|docx) -inurl:(jsp|php|html|aspx|htm|cf|shtml|ebooks|ebook) -site:.info
+parent directory DVDRip -xxx -html -htm -php -shtml -opendivx -md5 -md5sums
+parent directory MP3 -xxx -html -htm -php -shtml -opendivx -md5 -md5sums
+parent directory Name of Singer or album -xxx -html -htm -php -shtml -opendivx -md5 -md5sums
+filetype:config inurl:web.config inurl:ftp
+“Windows XP Professional” 94FBR
+ext:(doc | pdf | xls | txt | ps | rtf | odt | sxw | psw | ppt | pps | xml) (intext:confidential salary | intext:"budget approved") inurl:confidential
+ext:(doc | pdf | xls | txt | ps | rtf | odt | sxw | psw | ppt | pps | xml) (intext:confidential salary | intext:”budget approved”) inurl:confidential
+<br><br>
+
+![image](https://user-images.githubusercontent.com/6010786/152770177-537fbfa2-235e-4951-a885-12c6a90c40a5.png)
 
 ## Operators
 #### Search Term
@@ -151,16 +139,7 @@ site:*.com
 - cxsecurity.com
 - vulnerability-lab.com 
 
-# Writeups
-
-https://infosecwriteups.com/my-first-reflected-xss-bug-bounty-google-dork-xxx-92ac1180e0d0
-https://dewangpanchal98.medium.com/microsoft-bug-bounty-writeup-5ee4a7264dbf
-
-# Example 
-
-![image](https://user-images.githubusercontent.com/6010786/152770177-537fbfa2-235e-4951-a885-12c6a90c40a5.png)
-
-## Preventing GOOGLE DORKS
+## Preventing Google Dorks
 
 Encoding/encrypting sensitive data such as usernames, passwords and so forth.
 Run inquiries against your own site to check whether you can locate any sensitive data. On the off chance that you discover sensitive information, you can remove it from search results by utilizing Google Search Console.
@@ -186,6 +165,12 @@ Restrict access to dynamic URLs that contain ? symbol:
 User-agent: *   
 Disallow: /*?  
 
+# My Love Google Dork 
+```
+allintext:password filetype:log
+
+```
+More about google dorks checkout this https://medium.com/@thek4rthi/unveiling-google-dorks-an-easy-guide-to-advanced-search-techniques-220e2ed67f7f
 
 # Disclaimer: DONT BE A JERK!
 Needless to mention, please use this tool very very carefully. The authors won't be responsible for any consequences.
